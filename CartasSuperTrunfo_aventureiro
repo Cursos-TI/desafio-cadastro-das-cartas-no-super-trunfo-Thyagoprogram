@@ -1,0 +1,48 @@
+#include <stdio.h>
+    int main(){
+        printf("Aventureiro - Desafio Super Trunfo Países!\n");
+
+        char codigo_da_cidade[10];
+        char nome[50];
+        double populacao;
+        double area;
+        double densidade_populacional;
+        float pib;
+        double pib_per_capita;
+        int numero_de_pontos_turisticos;
+
+        printf("Informe o código da cidade:\n");
+        scanf("%s", &codigo_da_cidade);
+
+        printf("Informe o nome da cidade:\n");
+        scanf("%s", &nome);
+
+        printf("Informe a população:\n");
+        scanf("%lf", &populacao);
+
+        printf("Informe a área:\n");
+        scanf("%lf", &area);
+
+        printf("Informe o PIB:\n");
+        scanf("%f", &pib);
+
+        printf("Informe o número de pontos turísticos:\n");
+        scanf("%d", &numero_de_pontos_turisticos);
+
+        densidade_populacional = populacao / area;
+
+        pib_per_capita = pib / populacao;
+
+        printf("Codigo da cidade: %s\n", codigo_da_cidade);
+        printf("Nome da cidade: %s\n", nome);
+        printf("Populacao: %.2f\n", populacao);
+        printf("Area: %.2f\n", area);
+        printf("PIB: %.2f\n", pib);
+        printf("Numero de pontos turisticos: %d\n", numero_de_pontos_turisticos);
+        printf("Densidade Populacional: %.2f\n", densidade_populacional);
+        printf("PIB per capita: %.2f\n", pib_per_capita);
+
+        return 0;
+
+        
+    }
